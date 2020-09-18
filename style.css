@@ -1,0 +1,17 @@
+#header {
+    margin-bottom: 10px;
+
+}
+
+#forecast {
+    position: relative;
+    display: flex;
+    background-color: white;
+    
+    
+}
+
+.forecast {
+    float: left;
+    background-color: #00BFFF;
+}
