@@ -23,7 +23,7 @@ $(document).ready(function() {
     function searchWeather(city) {
         
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=acf348ebcd0d43c83beaf5c573f26468",
+            url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=acf348ebcd0d43c83beaf5c573f26468",
             method: "GET",
         }).then(function(response) {
             if (history.indexOf(city) === -1) {
