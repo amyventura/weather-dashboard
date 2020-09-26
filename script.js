@@ -63,7 +63,7 @@ $(document).ready(function() {
 
     function fiveDayForecast(city) {
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=acf348ebcd0d43c83beaf5c573f26468",
+            url: "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=acf348ebcd0d43c83beaf5c573f26468",
             method: "GET",
         }).then(function(data){
             // console.log(data);
@@ -98,7 +98,7 @@ $(document).ready(function() {
     function getUVIndex(lat, lon) {
         console.log(lat, lon);
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/uvi?appid=acf348ebcd0d43c83beaf5c573f26468&lat=" + lat + "&lon=" + lon,
+            url: "https://api.openweathermap.org/data/2.5/uvi?appid=acf348ebcd0d43c83beaf5c573f26468&lat=" + lat + "&lon=" + lon,
             method: "GET",
         }).then(function(data) {
             console.log(data);
